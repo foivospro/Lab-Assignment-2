@@ -1,0 +1,13 @@
+# Ignore target directory
+/target/
+
+# Ignore IDE files and directories
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.classpath
+*.project
+*.settings/
+*.sublime-workspace

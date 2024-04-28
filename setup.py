@@ -1,26 +1,19 @@
-# setup.py
-
 from setuptools import setup, find_packages
 
 setup(
-    name='my_package',
-    version='0.1',
+    name='employee-management',
+    version='1.0',
     packages=find_packages(),
-    author='Your Name',
-    author_email='your.email@example.com',
-    description='Description of your package',
-    long_description='Long description of your package',
-    url='https://github.com/yourusername/yourpackage',
     install_requires=[
-        # List of dependencies required by your package
+        # list your dependencies here
     ],
-    tests_require=[
-        'pytest',  # Add testing framework dependencies here
-        # Add other testing dependencies as needed
-    ],
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
+    entry_points={
+        'console_scripts': [
+            'employee-management = employee_management.main:main',  # replace with your main module
+        ],
+    },
+    author='Your Name',
+    author_email='your@email.com',
+    description='A package for employee management',
+    url='https://github.com/yourusername/employee-management',
 )

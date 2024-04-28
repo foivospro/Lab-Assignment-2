@@ -1,4 +1,3 @@
-import sys
 class Employee:
     def __init__(self, id, name, department, position):
         self.id = id
@@ -62,36 +61,25 @@ db = EmployeeDatabase()
 
 while True:
     print_menu()
-    print("Enter your choice: ", end="", flush=True)
-    choice = sys.stdin.readline().strip()  # Διαβάζει την είσοδο από το STDIN
+    choice = input("Enter your choice: ")
 
     if choice == "1":
-        print("Enter employee ID: ", end="", flush=True)
-        id = int(sys.stdin.readline().strip())  # Διαβάζει τον αριθμό ID από το STDIN
-        print("Enter employee name: ", end="", flush=True)
-        name = sys.stdin.readline().strip()  # Διαβάζει το όνομα από το STDIN
-        print("Enter employee department: ", end="", flush=True)
-        department = sys.stdin.readline().strip()  # Διαβάζει το τμήμα από το STDIN
-        print("Enter employee position: ", end="", flush=True)
-        position = sys.stdin.readline().strip()  # Διαβάζει τη θέση από το STDIN
+        id = int(input("Enter employee ID: "))
+        name = input("Enter employee name: ")
+        department = input("Enter employee department: ")
+        position = input("Enter employee position: ")
         print(db.create_employee(id, name, department, position))
     elif choice == "2":
-        print("Enter employee ID: ", end="", flush=True)
-        id = int(sys.stdin.readline().strip())  # Διαβάζει τον αριθμό ID από το STDIN
+        id = int(input("Enter employee ID: "))
         print(db.read_employee(id))
     elif choice == "3":
-        print("Enter employee ID: ", end="", flush=True)
-        id = int(sys.stdin.readline().strip())  # Διαβάζει τον αριθμό ID από το STDIN
-        print("Enter new name (leave blank to skip): ", end="", flush=True)
-        name = sys.stdin.readline().strip()  # Διαβάζει το νέο όνομα από το STDIN
-        print("Enter new department (leave blank to skip): ", end="", flush=True)
-        department = sys.stdin.readline().strip()  # Διαβάζει το νέο τμήμα από το STDIN
-        print("Enter new position (leave blank to skip): ", end="", flush=True)
-        position = sys.stdin.readline().strip()  # Διαβάζει τη νέα θέση από το STDIN
+        id = int(input("Enter employee ID: "))
+        name = input("Enter new name (leave blank to skip): ")
+        department = input("Enter new department (leave blank to skip): ")
+        position = input("Enter new position (leave blank to skip): ")
         print(db.update_employee(id, name, department, position))
     elif choice == "4":
-        print("Enter employee ID: ", end="", flush=True)
-        id = int(sys.stdin.readline().strip())  # Διαβάζει τον αριθμό ID από το STDIN
+        id = int(input("Enter employee ID: "))
         print(db.delete_employee(id))
     elif choice == "5":
         print("Exiting...")

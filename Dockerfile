@@ -1,12 +1,8 @@
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
-ADD app.py .
+# Αντιγραφή του αρχείου app.py στον φάκελο /app στον container
+COPY src/app.py /app/
 
-
-
-# Install any needed dependencies specified in requirements.txt
-#RUN pip install --no-cache-dir -r requirements.txt
-
-# Run the application when the container launches
-CMD ["python", "./src/app.py"]
+# Εκτέλεση του αρχείου app.py
+CMD ["python", "/app/app.py"]

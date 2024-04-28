@@ -45,9 +45,6 @@ class EmployeeDatabase:
             return "Employee not found"
 
 
-# Example usage:
-db = EmployeeDatabase()
-
 def print_menu():
     print("Employee Database Menu:")
     print("1. Create Employee")
@@ -55,34 +52,38 @@ def print_menu():
     print("3. Update Employee")
     print("4. Delete Employee")
     print("5. Exit")
+def run_app():
+    # Example usage:
+    db = EmployeeDatabase()
 
-# Example usage:
-db = EmployeeDatabase()
+    while True:
+        print_menu()
+        choice = input("Enter your choice: ")
 
-while True:
-    print_menu()
-    choice = input("Enter your choice: ")
+        if choice == "1":
+            id = int(input("Enter employee ID: "))
+            name = input("Enter employee name: ")
+            department = input("Enter employee department: ")
+            position = input("Enter employee position: ")
+            print(db.create_employee(id, name, department, position))
+        elif choice == "2":
+            id = int(input("Enter employee ID: "))
+            print(db.read_employee(id))
+        elif choice == "3":
+            id = int(input("Enter employee ID: "))
+            name = input("Enter new name (leave blank to skip): ")
+            department = input("Enter new department (leave blank to skip): ")
+            position = input("Enter new position (leave blank to skip): ")
+            print(db.update_employee(id, name, department, position))
+        elif choice == "4":
+            id = int(input("Enter employee ID: "))
+            print(db.delete_employee(id))
+        elif choice == "5":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice. Please enter a number from 1 to 5.")
 
-    if choice == "1":
-        id = int(input("Enter employee ID: "))
-        name = input("Enter employee name: ")
-        department = input("Enter employee department: ")
-        position = input("Enter employee position: ")
-        print(db.create_employee(id, name, department, position))
-    elif choice == "2":
-        id = int(input("Enter employee ID: "))
-        print(db.read_employee(id))
-    elif choice == "3":
-        id = int(input("Enter employee ID: "))
-        name = input("Enter new name (leave blank to skip): ")
-        department = input("Enter new department (leave blank to skip): ")
-        position = input("Enter new position (leave blank to skip): ")
-        print(db.update_employee(id, name, department, position))
-    elif choice == "4":
-        id = int(input("Enter employee ID: "))
-        print(db.delete_employee(id))
-    elif choice == "5":
-        print("Exiting...")
-        break
-    else:
-        print("Invalid choice. Please enter a number from 1 to 5.")
+
+if __name__ == '__main__':
+    run_app()

@@ -1,8 +1,7 @@
 import unittest
 from unittest.mock import MagicMock
 
-from app import EmployeeDatabase
-
+from src.app import EmployeeDatabase
 
 class TestEmployeeDatabase(unittest.TestCase):
 
@@ -52,12 +51,12 @@ class TestEmployeeDatabase(unittest.TestCase):
         result2 = self.db.read_employee(2)
         self.assertEqual(result2, "ID: 2, Name: Jane Smith, Department: HR, Position: Manager")
 
-        # Καλούμε τη μέθοδο read_employee για μη υπάρχοντα υπάλληλα
+        # Καλούμε τη μέθοδο read_employee για μη υπάρχοντες υπάλληλους
         result3 = self.db.read_employee(3)
         self.assertEqual(result3, "Employee not found")
 
     def test_update_employee(self):
-        # Καλούμε τη μέθοδο update_employee για υπάρχοντα υπάλληλα
+        # Καλούμε τη μέθοδο update_employee για υπάρχοντες υπάλληλους
         result1 = self.db.update_employee(1, name="Updated Name", position="Senior Developer")
         self.assertEqual(result1, "Employee updated successfully")
 

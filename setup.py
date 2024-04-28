@@ -15,5 +15,5 @@ setup(
     author='Foivos',
     author_email='pro.foibos@gmail.com',
     description='A package for employee management',
-    url='https://github.com/yourusername/employee-management',
+    url='https://github.com/foivospro/Lab-Assignment-2',
 )

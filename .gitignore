@@ -4,6 +4,7 @@
 # Ignore IDE files and directories
 .idea/
 .vscode/
+*__pycache__
 *.pytest_cache
 *.iml
 *.ipr

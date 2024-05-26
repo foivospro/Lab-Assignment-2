@@ -42,3 +42,29 @@ id:000004,sig:06,src:000001,time:32700,execs:18320,op:havoc,rep:16
  _ffPflllLllhl  ^q-^p fffffffffff^yfGfffffffffffR^@lll^`lKm ^P^@^@^@  m ^P^@^@^@m ^Ph^@^@^@^@h rh rh rhll^]  7 9
 
 
+### Task 3
+Answer:
+
+id:000000,sig:06,src:000000,time:20681,execs:14413,op:havoc,rep:2
+ g c* ^Affff^Av@ l^N^_   1   .lrv@ ^l;^W.^   ^X ^@^D^NX
+ 
+id:000001,sig:06,src:000000+000038,time:57302,execs:39352,op:splice,rep:15
+ g c* ^Av@ ^l;^W@^l^m^l^mlNllc* ^l^f^?ffdfv@ llkX;v@ ll6llc* ^l^f^?ffdff        ffffX;ffffff
+
+ 
+id:000002,sig:06,src:000033+000030,time:60222,execs:41040,op:splice,rep:1
+ g hhhhc* ^Affffffff^Av@ l  g
+
+id:000003,sig:06,src:000039+000033,time:64152,execs:43392,op:splice,rep:7
+ ttt   g ttt   g cccccVccffff#v@ g c*  l^@  v@ ^l;^W.^
+
+id:000004,sig:06,src:000048,time:65072,execs:43951,op:havoc,rep:12
+^@^Dttg c* ^A|f  . ' ^Afff^D^@txtt^`^@^@ lllllLllllllc* ^l;f^?ffdfffff^@tKKKKKKtf ^yf
+
+
+id:000005,sig:06,src:000033,time:69732,execs:46851,op:havoc,rep:13
+ D c*  fffffffv ~^q^@-O ^^^ K ^cf v@ l 1 vv g c*hhh ^Av@ ^lhhvvv^@-O ^^^ K ^cf v@ l^u1 vv g cvvD ^l;^>
+
+
+id:000006,sig:06,src:000052+000049,time:80353,execs:53475,op:splice,rep:12
+ffffl ^XWfc*^g f q ^N\fvdff^yf~Fm    ^N\fvdff^yf~Fm   ^X T r*

@@ -15,12 +15,12 @@ Name:Foivos Timotheos Proestakis - 8210126
 
 #### Crash Points
 Answer:
-1) Inputs where the first or the last character of the input string is the null character (^@) will cause the program to crash. Examples: "^@afbc", "abc^@".
+1) Inputs where the first or the last character of the input string is the null character (^@) will always cause the program to crash.   Examples: "^@afbc", "abc^@".
 
-2) Inputs containing consecutive numerical characters with an increment of 1 (the second numerical character is exactly one greater than the first numerical).
- For example, if the input contains the sequence "12", "23", "345", etc., the program will crash.
+4) Inputs containing consecutive numerical characters with an increment of 1 (the second numerical character is exactly one greater than the first numerical).
+ For example, if the input contains the sequence "123", "234", "34567", etc., the program will crash.
 
-3) Inputs with more than 10 characters will cause the program to crash. Examples: "jgtdfewtdt3e63776333o7828673287438638fdddefgf43ct5c555353""
+5) Inputs with more than 10 charactersa and numbers will cause the program to crash. Examples: "jgtdfewtdt3e63776333o7828673287438638fdddefgf43ct5c555353""
 
 
 ### Task 2
